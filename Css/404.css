@@ -1,0 +1,5 @@
+@media screen and (max-width:768px){
+    .notFound-Content .container p{
+        width: 80% !important;
+    }
+}

@@ -1,0 +1,321 @@
+:root {
+    --primary: #06BBCC;
+    --light: #F0FBFC;
+    --dark: #181d38;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #181d38;
+}
+.text-main{
+    color: var(--primary) !important;
+}
+.text-white{
+    color: var(--light) !important;
+}
+.bg-darked{
+    background-color: var(--dark);
+}
+.bg-lighted{
+    background-color: #F0FBFC !important;
+}
+.hoverOnButton{
+    transition: transform 1s;
+}
+.hoverOnButton:hover{
+    background-color: var(--light) !important;
+    color: var(--primary) !important;
+    border: 1px solid var(--primary);
+    transform: scale(1.1);
+}
+
+.h6-size{
+    font-size: 1.2rem;
+}
+.bg-main{
+    background-color: var(--primary) !important;
+}
+body{
+    font-family: "Heebo", sans-serif;
+    margin: 0;
+}
+.navbar{
+    background-color: var(--light);
+}
+nav .logo {
+    font-weight: 700;
+}
+nav .logo i{
+    color: var(--primary);
+    font-size: 2rem;
+}nav .logo h2{
+    color: var(--primary);
+    font-size: 2rem;
+}
+nav ul li .active{
+    color: var(--primary) !important;
+}
+nav .navbar-nav a{
+    font-size: 1.1rem;
+    color: black;
+}
+nav .navbar-nav a:hover{
+    color: var(--primary);
+}
+nav .navbar-nav .arrow{
+    background-color: var(--primary) !important;
+    color: #ffffff !important;
+}
+
+
+header{
+    background-image: url(../img/carousel-2.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+header .head-content{
+    color: #ffffff !important;
+    width: 50%;
+}
+header .head-content h3{
+    font-size: 3rem;
+}
+@media screen and (max-width:992px) {
+    header .head-content h3{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:768px) {
+    header .head-content h3{
+        font-size: 1.5rem;
+    }
+}
+
+header .head-content button{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 15px 25px ;
+    background-color: #ffffff;
+}
+@media screen and (max-width:768px) {
+    header .head-content button{
+        padding: 5px 10px ;
+    }
+}
+header .head-content .btn1{
+    color: #F0FBFC;
+}
+.transparent-layer {
+    background-color:  rgba(24, 29, 56, .7); /* Set the background color */
+    opacity: 1; /* Set the opacity to 50% (0.5) */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+#About .item{
+    background-color: var(--light);
+    transition: transform 2s;
+}
+#About .item i{
+    color: var(--primary);
+    font-size: 2rem;
+}
+#About p{
+    font-size: 16px;
+}
+#About .item p{
+    color: #52565B;
+}
+#About .item:hover {
+    background-color: var(--primary);
+    color: var(--light) !important;
+    transform: translateY(-20px);
+}
+#About .item:hover i {
+    color: var(--light);
+}
+#About .item:hover p {
+    color: var(--light);
+}
+#About .item:hover h5 {
+    color: var(--white);
+}
+.btn-primary{
+        color: var(--light);
+        background-color: #06BBCC;
+        border-color: #06BBCC;
+}
+#About .h2-Aft-Bef{
+    position: relative;
+    letter-spacing: 2px;
+}
+#About .h2-Aft-Bef::after{
+    content: "";
+    position: absolute;
+    background-color: #06BBCC;
+    top: 40%;
+    left: 25%;
+    width: 40px;
+    height: 2px;
+}
+#About .h2-Aft-Bef::before{
+    content: "";
+    position: absolute;
+    background-color: #06BBCC;
+    top: 55%;
+    left: 25%;
+    width: 60px;
+    height: 2px;
+}
+@media screen and (min-width:991px) {
+    #About .h2-Aft-Bef::before,
+    #About .h2-Aft-Bef::after{
+        left: 31%;
+    }
+}
+@media screen and (min-width:440px) and (max-width:767px) {
+    #About .h2-Aft-Bef::before,
+    #About .h2-Aft-Bef::after{
+        left: 30%;
+    }
+}
+@media screen and (max-width:450px) {
+    #About .h2-Aft-Bef::before,
+    #About .h2-Aft-Bef::after{
+        left: 50%;
+    }
+}
+
+
+
+/* Start Categories Course */
+#Categories .img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+#Categories .btn-Course-Info{
+    position: relative;
+}
+.small-box {
+    background-color: rgba(228, 8, 8, 0.8); /* Adjust the background color and opacity */
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    position: absolute;
+    top: 10px; /* Adjust the top position */
+    left: 10px; /* Adjust the left position */
+    z-index: 1;  
+}
+.hoverOnItem{
+    transition: transform 2s;
+}
+.hoverOnItem:hover{
+    transform: translateY(-20px);
+}
+.hoverOnSmallBox:hover{
+    background-color: var(--primary) !important;
+    color: var(--light) !important;
+}
+.hoverOnSmallBox:hover p{
+    color: var(--light) !important;
+}
+.hoverOnSmallBox:hover h5{
+    color: var(--light) !important;
+}
+
+
+
+/* Start Courses Section */
+.img-content{
+    position: relative;
+}
+.text-Under-Image{
+    width: 200px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    position: absolute;
+    top: 80%; /* Adjust the top position */
+    left: 25%; /* Adjust the left position */
+    z-index: 1; 
+}
+.text-Under-Image a:hover{
+    background-color: var(--light);
+    color: var(--primary);
+    border: none;
+}
+
+
+/* Start Instructors Section */
+#Instructors .card .img-content .icons {
+    color: #fff !important;
+    margin-top: -32px;
+    width: fit-content !important;
+    background-color: var(--light);
+    height: 50px; /* Adjust the height as needed */
+    left: 34%;
+    top: 98%; /* Adjust the top position */
+
+}
+
+
+
+@media screen and(max-width:991px) {
+    #Testiomnail .info .studentSayed{
+        width: 100% !important;
+    }
+} 
+
+
+
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer  .b-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    color: var(--light) !important;
+    transition: margin-left 2s;
+}
+footer  .b-link:hover{
+    margin-left: 5px;
+}
+footer .footer-icons div{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--light);
+}
+
+.footer .footer-icons :hover{
+    background-color: var(--light) !important;
+    color:  var(--primary) !important;
+}
+@media screen and (max-width:1200px) {
+    .footer .footer-icons{
+        width: 80% !important;
+        justify-content: space-around !important;
+
+    }
+}
+@media screen and (max-width:768px) {
+    .footer .footer-icons{
+        width: 40% !important;
+        justify-content: space-around !important;
+        margin: auto;
+    }
+}
+
+
